@@ -1,5 +1,6 @@
  <mjml>
    <mj-head>
+     <mj-title>Starter Email Template</mj-title>
      <mj-style inline="inline">
        .edit-image img, .edit-text div, .edit-button a, .edit-nav a {
          -block-edit: true;
@@ -10,19 +11,16 @@
        .edit-remove < tr {
          -block-remove: true;
        }
+       body > div:first-child {
+         -block-preview: true;
+       }
        .edit-text-30 div {
          -block-maxchar: 30;
        }
      </mj-style>
+     <mj-preview>Short line of preview text goes here</mj-preview>
    </mj-head>
   <mj-body background-color="#FFFFFF">
-
-    <mj-raw>
-      <div class="block-preview" style="display: none; max-height: 0; overflow: hidden;">
-        Short line of preview text goes here
-      </div>
-    </mj-raw>
-
     <mj-section vertical-align="center">
      <mj-column width="33%" vertical-align="middle">
        <mj-image css-class="edit-image" padding="0px" src="http://placehold.it/200x80" href="https://blocksedit.com/#" alt=""></mj-image>
