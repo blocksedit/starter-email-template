@@ -22,6 +22,8 @@
     <mj-preview>Short line of preview text goes here</mj-preview>
   </mj-head>
   <mj-body background-color="#FFFFFF">
+
+    <mj-raw><div class="block-region" data-group="header"></mj-raw>
     <mj-section vertical-align="middle" padding-bottom="0px">
       <mj-column width="33.3%" vertical-align="middle">
         <mj-image css-class="edit-image" padding-top="0px" padding-right="0px" padding-bottom="10px" padding-left="0px" src="http://placehold.it/200x80" href="https://blocksedit.com/#" alt=""></mj-image>
@@ -30,6 +32,23 @@
         <mj-text css-class="edit-text edit-text-30" padding-top="0px" padding-bottom="10px" padding-right="0px" padding-left="0px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22.4px%" align="center">Tagline/title</mj-text>
       </mj-column>
     </mj-section>
+    <mj-raw></div></mj-raw>
+
+    <mj-raw><div class="block-region" data-group="header"></mj-raw>
+    <mj-section vertical-align="middle" padding-bottom="0px">
+      <mj-column width="33.3%" vertical-align="middle">
+        <mj-image css-class="edit-image" padding-top="0px" padding-right="0px" padding-bottom="10px" padding-left="0px" src="http://placehold.it/200x80" href="https://blocksedit.com/#" alt=""></mj-image>
+      </mj-column>
+    </mj-section>
+    <mj-raw></div></mj-raw>
+
+    <mj-raw><div class="block-region" data-group="header"></mj-raw>
+    <mj-section vertical-align="middle" padding-bottom="0px">
+      <mj-column width="66.6%" vertical-align="middle">
+        <mj-text css-class="edit-text edit-text-30" padding-top="0px" padding-bottom="10px" padding-right="0px" padding-left="0px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22.4px%" align="center">Tagline/title</mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-raw></div></mj-raw>
 
     <mj-raw><div class="block-section"></mj-raw>
     <mj-section background-color="#333" padding="0px">
