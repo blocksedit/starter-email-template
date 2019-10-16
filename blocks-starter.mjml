@@ -82,9 +82,9 @@
     <mj-raw><div class="block-section" data-group="basic"></mj-raw>
     <mj-section vertical-align="middle" padding-bottom="0px">
       <mj-column>
-        <mj-text padding-top="0px" padding-right="0px" padding-bottom="10px" padding-left="0px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="28px"><span class="block-edit" data-block="basic-headline">Simple headline, description and call to action</span></mj-text>
-        <mj-text padding-top="0px" padding-right="0px" padding-bottom="10px" padding-left="0px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22.4px%"><span class="block-edit" data-block="basic-text">Perhaps the most straightforward format, with the description text kept relatively short, either a couple of sentences, or a paragraph max.</span></mj-text>
-        <mj-button css-class="edit-region edit-remove" padding-bottom="20px" href="https://blocksedit.com/#" align="left" padding-left="0" font-size="18px" border-radius="3px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-weight="700" line-height="100%"><span class="block-edit" data-block="basic-cta">Call to Action</span></mj-button>
+        <mj-text padding-top="0px" padding-right="0px" padding-bottom="10px" padding-left="0px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="28px">Simple headline, description and call to action</mj-text>
+        <mj-text padding-top="0px" padding-right="0px" padding-bottom="10px" padding-left="0px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22.4px%">Perhaps the most straightforward format, with the description text kept relatively short, either a couple of sentences, or a paragraph max.</mj-text>
+        <mj-button css-class="edit-region edit-remove" padding-bottom="20px" href="https://blocksedit.com/#" align="left" padding-left="0" font-size="18px" border-radius="3px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-weight="700" line-height="100%">Call to Action</mj-button>
       </mj-column>
     </mj-section>
     <mj-raw></div></mj-raw>
@@ -92,9 +92,9 @@
     <mj-raw><div class="block-section" data-group="basic"></mj-raw>
     <mj-section vertical-align="middle" padding-bottom="0px">
       <mj-column>
-        <mj-text padding-top="0px" padding-right="0px" padding-bottom="10px" padding-left="0px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" align="center" font-size="28px"><span class="block-edit" data-block="basic-headline">Simple headline, description and call to action</span></mj-text>
-        <mj-text padding-top="0px" padding-right="0px" padding-bottom="10px" align="center" padding-left="0px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22.4px%"><span class="block-edit" data-block="basic-text">Perhaps the most straightforward format, with the description text kept relatively short, either a couple of sentences, or a paragraph max.</span></mj-text>
-        <mj-button css-class="edit-region edit-remove" padding-right="0px" padding-bottom="20px" padding-left="0px" align="center" href="https://blocksedit.com/#" align="left" font-size="18px" border-radius="3px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-weight="700" line-height="100%"><span class="block-edit" data-block="basic-cta">Call to Action</span></mj-button>
+        <mj-text padding-top="0px" padding-right="0px" padding-bottom="10px" padding-left="0px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" align="center" font-size="28px">Simple headline, description and call to action</mj-text>
+        <mj-text padding-top="0px" padding-right="0px" padding-bottom="10px" align="center" padding-left="0px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22.4px%">Perhaps the most straightforward format, with the description text kept relatively short, either a couple of sentences, or a paragraph max.</mj-text>
+        <mj-button css-class="edit-region edit-remove" padding-right="0px" padding-bottom="20px" padding-left="0px" align="center" href="https://blocksedit.com/#" align="left" font-size="18px" border-radius="3px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-weight="700" line-height="100%">Call to Action</mj-button>
       </mj-column>
     </mj-section>
     <mj-raw></div></mj-raw>
@@ -102,9 +102,9 @@
     <mj-raw><div class="block-section" data-group="basic"></mj-raw>
     <mj-section vertical-align="middle" padding-bottom="0px" background-color="#eee">
       <mj-column>
-        <mj-text padding-top="0px" padding-bottom="10px" padding-left="15px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="28px"><span class="block-edit" data-block="basic-headline">Simple headline, description and call to action</span></mj-text>
-        <mj-text padding-top="0px" padding-bottom="10px" padding-left="15px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22.4px%"><span class="block-edit" data-block="basic-text">Perhaps the most straightforward format, with the description text kept relatively short, either a couple of sentences, or a paragraph max.</span></mj-text>
-        <mj-button css-class="edit-region edit-remove" padding-bottom="20px" href="https://blocksedit.com/#" align="left" padding-left="15px" font-size="18px" border-radius="3px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-weight="700" line-height="100%"><span class="block-edit" data-block="basic-cta">Call to Action</span></mj-button>
+        <mj-text padding-top="0px" padding-bottom="10px" padding-left="15px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="28px">Simple headline, description and call to action</mj-text>
+        <mj-text padding-top="0px" padding-bottom="10px" padding-left="15px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22.4px%">Perhaps the most straightforward format, with the description text kept relatively short, either a couple of sentences, or a paragraph max.</mj-text>
+        <mj-button css-class="edit-region edit-remove" padding-bottom="20px" href="https://blocksedit.com/#" align="left" padding-left="15px" font-size="18px" border-radius="3px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-weight="700" line-height="100%">Call to Action</mj-button>
       </mj-column>
     </mj-section>
     <mj-raw></div></mj-raw>
@@ -112,9 +112,9 @@
     <mj-raw><div class="block-section" data-group="basic"></mj-raw>
     <mj-section vertical-align="middle" padding-bottom="0px" background-color="#eee">
       <mj-column>
-        <mj-text padding-top="0px" padding-bottom="10px" padding-left="15px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" align="center" font-size="28px"><span class="block-edit" data-block="basic-headline">Simple headline, description and call to action</span></mj-text>
-        <mj-text padding-top="0px" padding-bottom="10px" align="center" padding-left="15px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22.4px%"><span class="block-edit" data-block="basic-text">Perhaps the most straightforward format, with the description text kept relatively short, either a couple of sentences, or a paragraph max.</span></mj-text>
-        <mj-button css-class="edit-region edit-remove" padding-bottom="20px" align="center" href="https://blocksedit.com/#" align="left" padding-left="15px" font-size="18px" border-radius="3px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-weight="700" line-height="100%"><span class="block-edit" data-block="basic-cta">Call to Action</span></mj-button>
+        <mj-text padding-top="0px" padding-bottom="10px" padding-left="15px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" align="center" font-size="28px">Simple headline, description and call to action</mj-text>
+        <mj-text padding-top="0px" padding-bottom="10px" align="center" padding-left="15px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22.4px%">Perhaps the most straightforward format, with the description text kept relatively short, either a couple of sentences, or a paragraph max.</mj-text>
+        <mj-button css-class="edit-region edit-remove" padding-bottom="20px" align="center" href="https://blocksedit.com/#" align="left" padding-left="15px" font-size="18px" border-radius="3px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-weight="700" line-height="100%">Call to Action</mj-button>
       </mj-column>
     </mj-section>
     <mj-raw></div></mj-raw>
