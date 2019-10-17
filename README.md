@@ -7,7 +7,10 @@ The Starter Email Template is an open-source project from [Blocks Edit](https://
 
 [View an editable preview of the Starter Email Template](https://app.blocksedit.com/original/744/e7aed0adf69cd3f447dbc2b76799feab446c90db)
 
-### Build notes ###
+## Build notes ##
 - Built using the [MJML](https://mjml.io) framework, via it's [online editor](https://mjml.io/try-it-live)
-- Based on [Some Reaction](http://somereaction.com)'s Systematic method
 - Contains [Blocks Edit editable tags](https://blocksedit.com/developer/)
+- Based on [Some Reaction](http://somereaction.com)'s Systematic method
+
+## Screenshot of template sections and mobile version ##
+<img src="starter-template-sections-mobile.png" />
