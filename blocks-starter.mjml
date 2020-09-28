@@ -29,7 +29,7 @@
         <mj-image css-class="edit-image" padding="0 0 10px 0" src="http://placehold.it/400x160" href="https://blocksedit.com/#" alt=""></mj-image>
       </mj-column>
       <mj-column width="66.6%" padding="0 20px 0 15px" vertical-align="middle">
-        <mj-text css-class="edit-text edit-text-30" padding="0 0 10px 0" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22px" align="center">Tagline/title</mj-text>
+        <mj-text padding="0 0 10px 0" align="center"><h1 class="block-edit block-maxchar-30" style="margin: 0; font-family: Myriad Pro,PT Sans,Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px; font-weight: normal;">Tagline/title</h1></mj-text>
       </mj-column>
     </mj-section>
     <mj-raw></div></mj-raw>
@@ -45,7 +45,7 @@
     <mj-raw><div class="block-region" data-group="header"></mj-raw>
     <mj-section padding="20px 20px 10px 20px">
       <mj-column>
-        <mj-text css-class="edit-text edit-text-30" padding="0" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22px" align="center">Tagline/title</mj-text>
+        <mj-text padding="0" align="center"><h1 class="block-edit block-maxchar-30" style="margin: 0; font-family: Myriad Pro,PT Sans,Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px; font-weight: normal;">Tagline/title</h1></mj-text>
       </mj-column>
     </mj-section>
     <mj-raw></div></mj-raw>
@@ -74,7 +74,7 @@
 
     <mj-raw><div class="block-section"></mj-raw>
     <mj-hero mode="fixed-height" height="350px" background-width="600px" background-height="350px" background-url="http://placehold.it/1200x700" padding="120px 15px">
-      <mj-text css-class="edit-text" padding="0 0 20px 0" color="#ffffff" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" align="center" font-size="28px" line-height="32px">Headline text</mj-text>
+      <mj-text padding="0 0 20px 0" align="center"><h2 class="block-edit" style="margin: 0;font-family: Myriad Pro,PT Sans,Arial, Helvetica, sans-serif; font-size: 28px; line-height: 32px; font-weight: normal; color: #ffffff;">Headline text</h2></mj-text>
       <mj-button css-class="edit-button edit-region edit-remove" padding="0" inner-padding="10px 20px" href="https://blocksedit.com/#" font-size="18px" border-radius="3px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-weight="700" align="center">Call to Action</mj-button>
     </mj-hero>
     <mj-raw></div></mj-raw>
@@ -82,8 +82,8 @@
     <mj-raw><div class="block-section" data-group="basic"></mj-raw>
     <mj-section padding="20px 0">
       <mj-column>
-        <mj-text css-class="edit-text" padding="0 0 10px 0" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="28px" line-height="32px">Simple headline, description and call to action</mj-text>
-        <mj-text css-class="edit-text" padding="0 0 10px 0" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22px">Perhaps the most straightforward format, with the description text kept relatively short, either a couple of sentences, or a paragraph max.</mj-text>
+        <mj-text padding="0 0 10px 0" align="left"><h2 class="block-edit" style="margin: 0; font-family: Myriad Pro,PT Sans,Arial, Helvetica, sans-serif; font-size: 28px; line-height: 32px; font-weight: normal;">Simple headline, description and call to action</h2></mj-text>
+        <mj-text padding="0 0 10px 0" align="left"><p class="block-edit" style="margin: 0; font-family: Myriad Pro,PT Sans,Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px;">Perhaps the most straightforward format, with the description text kept relatively short, either a couple of sentences, or a paragraph max.</p></mj-text>
         <mj-button css-class="edit-button edit-region edit-remove" padding="0" inner-padding="10px 20px" href="https://blocksedit.com/#" align="left" font-size="18px" border-radius="3px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-weight="700" line-height="100%">Call to Action</mj-button>
       </mj-column>
     </mj-section>
@@ -92,8 +92,8 @@
     <mj-raw><div class="block-section" data-group="basic"></mj-raw>
     <mj-section padding="0 0 20px 0">
       <mj-column>
-        <mj-text css-class="edit-text" padding-top="0" padding-right="0" padding-bottom="10px" padding-left="0" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" align="center" font-size="28px" line-height="32px">Simple headline, description and call to action</mj-text>
-        <mj-text css-class="edit-text" padding-top="0" padding-right="0" padding-bottom="10px" align="center" padding-left="0" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22px">Perhaps the most straightforward format, with the description text kept relatively short, either a couple of sentences, or a paragraph max.</mj-text>
+        <mj-text padding="0 0 10px 0" align="center"><h2 class="block-edit" style="margin: 0; font-family: Myriad Pro,PT Sans,Arial, Helvetica, sans-serif; font-size: 28px; line-height: 32px; font-weight: normal;">Simple headline, description and call to action</h2></mj-text>
+        <mj-text padding="0 0 10px 0" align="center"><p class="block-edit" style="margin: 0; font-family: Myriad Pro,PT Sans,Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px;">Perhaps the most straightforward format, with the description text kept relatively short, either a couple of sentences, or a paragraph max.</p></mj-text>
         <mj-button css-class="edit-button edit-region edit-remove" padding="0" inner-padding="10px 20px" align="center" href="https://blocksedit.com/#" align="left" font-size="18px" border-radius="3px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-weight="700" line-height="100%">Call to Action</mj-button>
       </mj-column>
     </mj-section>
@@ -102,8 +102,8 @@
     <mj-raw><div class="block-section" data-group="basic"></mj-raw>
     <mj-section padding="20px" background-color="#eeeeee">
       <mj-column>
-        <mj-text css-class="edit-text" padding="0 0 10px 0" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="28px" line-height="32px">Simple headline, description and call to action</mj-text>
-        <mj-text css-class="edit-text" padding="0 0 10px 0" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22px">Perhaps the most straightforward format, with the description text kept relatively short, either a couple of sentences, or a paragraph max.</mj-text>
+        <mj-text padding="0 0 10px 0" align="left"><h2 class="block-edit" style="margin: 0; font-family: Myriad Pro,PT Sans,Arial, Helvetica, sans-serif; font-size: 28px; line-height: 32px; font-weight: normal;">Simple headline, description and call to action</h2></mj-text>
+        <mj-text padding="0 0 10px 0" align="left"><p class="block-edit" style="margin: 0; font-family: Myriad Pro,PT Sans,Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px;">Perhaps the most straightforward format, with the description text kept relatively short, either a couple of sentences, or a paragraph max.</p></mj-text>
         <mj-button css-class="edit-button edit-region edit-remove" padding="0" inner-padding="10px 20px" href="https://blocksedit.com/#" align="left" font-size="18px" border-radius="3px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-weight="700" line-height="100%">Call to Action</mj-button>
       </mj-column>
     </mj-section>
@@ -112,8 +112,8 @@
     <mj-raw><div class="block-section" data-group="basic"></mj-raw>
     <mj-section padding="20px" background-color="#eeeeee">
       <mj-column>
-        <mj-text css-class="edit-text" padding="0 0 10px 0" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" align="center" font-size="28px" line-height="32px">Simple headline, description and call to action</mj-text>
-        <mj-text css-class="edit-text" padding="0 0 10px 0" align="center" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22px">Perhaps the most straightforward format, with the description text kept relatively short, either a couple of sentences, or a paragraph max.</mj-text>
+        <mj-text padding="0 0 10px 0" align="center"><h2 class="block-edit" style="margin: 0; font-family: Myriad Pro,PT Sans,Arial, Helvetica, sans-serif; font-size: 28px; line-height: 32px; font-weight: normal;">Simple headline, description and call to action</h2></mj-text>
+        <mj-text padding="0 0 10px 0" align="center"><p class="block-edit" style="margin: 0; font-family: Myriad Pro,PT Sans,Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px;">Perhaps the most straightforward format, with the description text kept relatively short, either a couple of sentences, or a paragraph max.</p></mj-text>
         <mj-button css-class="edit-button edit-region edit-remove" padding="0" inner-padding="10px 20px" align="center" href="https://blocksedit.com/#" align="left" font-size="18px" border-radius="3px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-weight="700" line-height="100%">Call to Action</mj-button>
       </mj-column>
     </mj-section>
@@ -125,8 +125,8 @@
         <mj-image css-class="edit-image" padding="0 0 10px 0" src="http://placehold.it/600x450" href="https://blocksedit.com/#" alt=""></mj-image>
       </mj-column>
       <mj-column vertical-align="top" padding="0 0 0 15px">
-        <mj-text css-class="edit-text" padding="0 0 10px 0" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="28px" line-height="32px">Section with image on the left</mj-text>
-        <mj-text css-class="edit-text" padding="0 0 10px 0" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22px">Description, usually a few lines long to fill up the space that comes from the image's height. Sometimes a link is included.</mj-text>
+        <mj-text padding="0 0 10px 0" align="left"><h2 class="block-edit" style="margin: 0; font-family: Myriad Pro,PT Sans,Arial, Helvetica, sans-serif; font-size: 28px; line-height: 32px; font-weight: normal;">Section with image on the left</h2></mj-text>
+        <mj-text padding="0 0 10px 0" align="left"><p class="block-edit" style="margin: 0; font-family: Myriad Pro,PT Sans,Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px;">Description, usually a few lines long to fill up the space that comes from the image's height. Sometimes a link is included.</p></mj-text>
         <mj-button css-class="edit-button edit-region edit-remove" padding="0" inner-padding="10px 20px" href="https://blocksedit.com/#" align="left" font-size="18px" border-radius="3px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-weight="700" line-height="100%">Call to Action</mj-button>
       </mj-column>
     </mj-section>
@@ -138,8 +138,8 @@
         <mj-image css-class="edit-image" padding-bottom="10px" padding-top="0" padding-left="0" padding-right="0" src="http://placehold.it/600x450" href="https://blocksedit.com/#" alt=""></mj-image>
       </mj-column>
       <mj-column vertical-align="top" padding="0 15px 0 0">
-        <mj-text css-class="edit-text" padding="0 0 10px 0" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="28px" line-height="32px">Section with image on the right</mj-text>
-        <mj-text css-class="edit-text" padding="0 0 10px 0" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22px">Description, usually a few lines long to fill up the space that comes from the image's height. Sometimes a link is included.</mj-text>
+        <mj-text padding="0 0 10px 0" align="left"><h2 class="block-edit" style="margin: 0; font-family: Myriad Pro,PT Sans,Arial, Helvetica, sans-serif; font-size: 28px; line-height: 32px; font-weight: normal;">Section with image on the right</h2></mj-text>
+        <mj-text padding="0 0 10px 0" align="left"><p class="block-edit" style="margin: 0; font-family: Myriad Pro,PT Sans,Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px;">Description, usually a few lines long to fill up the space that comes from the image's height. Sometimes a link is included.</p></mj-text>
         <mj-button css-class="edit-button edit-region edit-remove" padding="0" inner-padding="10px 20px" href="https://blocksedit.com/#" align="left" font-size="18px" border-radius="3px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-weight="700" line-height="100%">Call to Action</mj-button>
       </mj-column>
     </mj-section>
@@ -149,12 +149,12 @@
     <mj-section padding-bottom="0">
       <mj-column vertical-align="top" padding="0 5px 0 0">
         <mj-image css-class="edit-image" padding="0 0 10px 0" src="http://placehold.it/600x300" href="https://blocksedit.com/#" alt=""></mj-image>
-        <mj-text css-class="edit-text" padding="0 0 10px 0" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22px" align="center">Column-based layouts allow showcasing multiple items. Typically, same-sized images for each item help draw attention and glance at items before reading their description.</mj-text>
+        <mj-text padding="0 0 10px 0" align="center"><p class="block-edit" style="margin: 0; font-family: Myriad Pro,PT Sans,Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px;">Column-based layouts allow showcasing multiple items. Typically, same-sized images for each item help draw attention and glance at items before reading their description.</p></mj-text>
         <mj-button css-class="edit-button edit-region edit-remove" padding="0" inner-padding="10px 20px" href="https://blocksedit.com/#" align="center" font-size="18px" border-radius="3px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-weight="700" line-height="100%">Call to Action</mj-button>
       </mj-column>
       <mj-column vertical-align="top" padding="0 0 0 5px">
         <mj-image css-class="edit-image" padding="0 0 10px 0" src="http://placehold.it/600x300" href="https://blocksedit.com/#" alt=""></mj-image>
-        <mj-text css-class="edit-text" padding="0 0 10px 0" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22px" align="center">Column-based layouts allow showcasing multiple items. Typically, same-sized images for each item help draw attention and glance at items before reading their description.</mj-text>
+        <mj-text padding="0 0 10px 0" align="center"><p class="block-edit" style="margin: 0; font-family: Myriad Pro,PT Sans,Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px;">Column-based layouts allow showcasing multiple items. Typically, same-sized images for each item help draw attention and glance at items before reading their description.</p></mj-text>
         <mj-button css-class="edit-button edit-region edit-remove" padding="0" inner-padding="10px 20px" href="https://blocksedit.com/#" align="center" font-size="18px" border-radius="3px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-weight="700" line-height="100%">Call to Action</mj-button>
       </mj-column>
     </mj-section>
@@ -164,17 +164,17 @@
     <mj-section padding="20px 0 0 0">
       <mj-column vertical-align="top" padding="0 7px 0 0">
         <mj-image css-class="edit-image" padding="0 0 10px 0" src="http://placehold.it/400x300" href="https://blocksedit.com/#" alt=""></mj-image>
-        <mj-text css-class="edit-text" padding-top="0" padding-right="7px" padding-bottom="10px" padding-left="0" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22px" align="center">This allows the reader to scan through it. Often articles are linked for further reading.</mj-text>
+        <mj-text padding="0 0 10px 0" align="center"><p class="block-edit" style="margin: 0; font-family: Myriad Pro,PT Sans,Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px;">This allows the reader to scan through it. Often articles are linked for further reading.</p></mj-text>
         <mj-button css-class="edit-button edit-region edit-remove" padding="0" inner-padding="10px 20px" href="https://blocksedit.com/#" align="center" font-size="18px" border-radius="3px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-weight="700" line-height="100%">Call to Action</mj-button>
       </mj-column>
       <mj-column vertical-align="top" padding="0 3.5px 0 3.5px">
         <mj-image css-class="edit-image" padding-top="0" padding="0 0 10px 0" src="http://placehold.it/400x300" href="https://blocksedit.com/#" alt=""></mj-image>
-        <mj-text css-class="edit-text" padding="0 0 10px 0" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22px" align="center">This allows the reader to scan through it. Often articles are linked for further reading.</mj-text>
+        <mj-text padding="0 0 10px 0" align="center"><p class="block-edit" style="margin: 0; font-family: Myriad Pro,PT Sans,Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px;">This allows the reader to scan through it. Often articles are linked for further reading.</p></mj-text>
         <mj-button css-class="edit-button edit-region edit-remove" padding="0" inner-padding="10px 20px" href="https://blocksedit.com/#" align="center" font-size="18px" border-radius="3px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-weight="700" line-height="100%">Call to Action</mj-button>
       </mj-column>
       <mj-column vertical-align="top" padding="0 0 0 7px">
         <mj-image css-class="edit-image" padding="0 0 10px 0" src="http://placehold.it/400x300" href="https://blocksedit.com/#" alt=""></mj-image>
-        <mj-text css-class="edit-text" padding-top="0" padding="0 0 10px 0" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22px" align="center">This allows the reader to scan through it. Often articles are linked for further reading.</mj-text>
+        <mj-text padding="0 0 10px 0" align="center"><p class="block-edit" style="margin: 0; font-family: Myriad Pro,PT Sans,Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px;">This allows the reader to scan through it. Often articles are linked for further reading.</p></mj-text>
         <mj-button css-class="edit-button edit-region edit-remove" padding="0" inner-padding="10px 20px" href="https://blocksedit.com/#" align="center" font-size="18px" border-radius="3px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-weight="700" line-height="100%">Call to Action</mj-button>
       </mj-column>
     </mj-section>
@@ -186,7 +186,7 @@
         <mj-image css-class="edit-image" padding="0 0 10px 0" src="http://placehold.it/400x250" href="https://blocksedit.com/#" alt=""></mj-image>
       </mj-column>
       <mj-column width="66.6%" vertical-align="top" padding="0 0 0 15px">
-        <mj-text css-class="edit-text" padding="0 0 10px 0" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-size="18px" line-height="22px">This allows the reader to scan through it. Often articles are linked for further reading.</mj-text>
+        <mj-text padding="0 0 10px 0" align="left"><p class="block-edit" style="margin: 0; font-family: Myriad Pro,PT Sans,Arial, Helvetica, sans-serif; font-size: 18px; line-height: 22px;">This allows the reader to scan through it. Often articles are linked for further reading.</p></mj-text>
         <mj-button css-class="edit-button edit-region edit-remove" padding="0" inner-padding="10px 20px" href="https://blocksedit.com/#" align="left" font-size="18px" border-radius="3px" font-family="'Myriad Pro','PT Sans',Arial,Helvetica,sans-serif" font-weight="700" line-height="100%">Call to Action</mj-button>
       </mj-column>
     </mj-section>
