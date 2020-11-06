@@ -9,14 +9,16 @@ The Starter Email Template is an open-source project from [Blocks Edit](https://
 
 [View editable preview in Blocks Edit &rarr;](https://app.blocksedit.com/original/744/e7aed0adf69cd3f447dbc2b76799feab446c90db)
 
-[More details/overview page &rarr;](https://blocksedit.com/developer/starter-email-template/)
+[Full overview page &rarr;](https://blocksedit.com/developer/starter-email-template/)
 
 ## Features ##
-- Mobile-responsive ready code
 - 11 unique stackable sections, some with alternative versions
 - 5 standard layout examples
+- Mobile-responsive ready
+- Dark mode ready
+- Accessibility ready
 - Example themed email
-- Added editable tags to test out content layouts in Blocks Edit
+- Editable tags for Blocks Edit
 
 ## Contributing ##
 The Starter Email Template is an open-source, community-driven project on GitHub. Help maintain it by submitting bug fixes, pull requests, or enhancements, or by participating in discussions in the issue tracker. And submit your themed templates and emails that you create from the base template.
