@@ -1,5 +1,5 @@
 # Starter Email Template
-### Standard layout components for designing and building emails
+### Standard components for designing and building emails
 
 <img src="starter-template-use-example.png" />
 
@@ -7,26 +7,25 @@
 
 The Starter Email Template is an open-source project from [Blocks Edit](https://blocksedit.com), an email template editor that lets you add editable features around your custom-coded template. It's based on the original starter template that comes with new accounts.
 
-[View editable preview in Blocks Edit &rarr;](https://app.blocksedit.com/original/744/e7aed0adf69cd3f447dbc2b76799feab446c90db)
+[View editable preview in Blocks Edit &rarr;](https://app.blocksedit.com/preview/t/744/e7aed0adf69cd3f447dbc2b76799feab446c90db)
 
 [Full overview page &rarr;](https://blocksedit.com/developer/starter-email-template/)
 
 ## Features ##
-- 11 unique stackable sections, some with alternative versions
-- 5 standard layout examples
+- Standard stackable sections and components
+- Variant formatting options for sections
 - Mobile-responsive ready
-- Dark mode ready
-- Accessibility ready
-- Example themed email
+- Built semantically and with accessibility in mind
+- Includes standard layout examples
+- Includes example themed email
 - Editable tags for Blocks Edit
 
 ## Contributing ##
 The Starter Email Template is an open-source, community-driven project on GitHub. Help maintain it by submitting bug fixes, pull requests, or enhancements, or by participating in discussions in the issue tracker. And submit your themed templates and emails that you create from the base template.
 
 ## Build notes ##
-- Built using the [MJML](https://mjml.io) framework, via it's [online editor](https://mjml.io/try-it-live)
+- Structural code based on Mark Robbins' [Good Email Code](https://goodemailcode.com)
 - Contains [Blocks Edit editable tags](https://blocksedit.com/developer/)
-- Based on [Some Reaction](http://somereaction.com)'s Systematic method
 
 ## Sections and mobile version ##
 <img src="starter-template-sections-mobile.png" />
