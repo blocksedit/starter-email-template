@@ -5,12 +5,6 @@
 
 **Quickly kick off your email's design with a skeleton layout.** The Starter Email Template is a modular email template that acts as a prototype for your own email template. Its simple design focuses on essential layouts and components you would need in an email, with minimal styling for you to build on top of when theming your own template.
 
-The Starter Email Template is an open-source project from [Blocks Edit](https://blocksedit.com), an email template editor that lets you add editable features around your custom-coded template. It's based on the original starter template that comes with new accounts.
-
-[View editable preview in Blocks Edit &rarr;](https://app.blocksedit.com/preview/t/744/e7aed0adf69cd3f447dbc2b76799feab446c90db)
-
-[Full overview page &rarr;](https://blocksedit.com/developer/starter-email-template/)
-
 ## Features ##
 - Standard stackable sections and components
 - Variant formatting options for sections
