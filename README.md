@@ -1,21 +1,30 @@
-# Starter Email Template
-### Standard components for designing and building emails
+# Starter Email Boilerplate
+### A skeleton HTML template of essential design patterns for accessible, responsive emails
 
-<img src="starter-template-use-example.png" />
+**A modularly designed boilerplate template that acts as a starting point for your own email templates**, with focus on semantics and accessibility, and clean code that works across email clients. It includes essential email layouts and components, with minimal styling for you to build on top of.
 
-**Quickly kick off your email's design with a skeleton layout.** The Starter Email Template is a modular email template that acts as a prototype for your own email template. Its simple design focuses on essential layouts and components you would need in an email, with minimal styling for you to build on top of when theming your own template.
+## Approach ##
+
+**Semantic first** - div's are primarily used for structure, with ghost tables when needed to support Outlook
+
+**Optimized for accessibility** - semantic elements like heading and paragraph tags, and readable font sizes, colors, and spacing
+
+**Responsive** - simple CSS media query definitions to adjust the layout for mobile across all modules
 
 ## Features ##
-- Standard stackable sections and components
-- Variant formatting options for sections
+- Support for major email clients
+- Built semantically with accessibility in mind
 - Mobile-responsive ready
-- Built semantically and with accessibility in mind
-- Includes standard layout examples
+- Essential pre-built modules
+- Includes example email types
 - Includes example themed email
-- Editable tags for Blocks Edit
+- Blocks Edit ready
 
-## Contributing ##
-The Starter Email Template is an open-source, community-driven project on GitHub. Help maintain it by submitting bug fixes, pull requests, or enhancements, or by participating in discussions in the issue tracker. And submit your themed templates and emails that you create from the base template.
+## Email clients tested ##
+- Gmail and Android
+- Apple Mail
+- Microsoft Outlook
+- Yahoo! Mail and AOL
 
 ## Build notes ##
 - Structural code based on Mark Robbins' [Good Email Code](https://goodemailcode.com)
