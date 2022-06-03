@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
-  <meta name="x-apple-disable-message-reformatting">
-  <meta name="color-scheme" content="light only">
-  <meta name="supported-color-schemes" content="light only">
-  <title>Starter Email Template - Basic example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <meta name="color-scheme" content="light dark">
+  <title>Starter Email Boilerplate - Basic example</title>
   <!--[if mso]>
   <noscript>
     <xml>
@@ -18,17 +15,23 @@
   </noscript>
   <![endif]-->
   <style>
+/* Dark mode settings */
     :root {
-      color-scheme: light only;
-      supported-color-schemes: light only;
+      color-scheme: light dark;
     }
-    .body {
-      margin: 0;
+
+/* Reset */
+    html, body {
+      margin: 0 auto !important;
+      padding: 0 !important;
+      height: 100% !important;
+      width: 100% !important;
     }
     .main {
       box-sizing: border-box;
     }
 
+/* Responsive adjustments */
     @media screen and (max-width: 480px) {
       .column {
         display: block !important;
@@ -61,11 +64,28 @@
         padding-bottom: 14px !important;
       }
     }
+
+/* Dark mode adjustments */
+    @media (prefers-color-scheme: dark) {
+      body, .wrapper {
+        background-color: #222 !important;
+      }
+      h1, h2, h3, p, ul li, code {
+        color: #f1f1f1 !important;
+      }
+      .column.alt {
+        background-color: #1b1b1b !important;
+      }
+      .btn a {
+        background: #a6a6a6 !important;
+        color: #404040 !important;
+      }
+    }
   </style>
 </head>
 <body style="background: #ffffff;">
   <div style="display: none;">&nbsp;</div>
-  <div role="article" aria-roledescription="email" lang="en" style="background: #ffffff; font-size: 16px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">
+  <div role="article" lang="en" dir="ltr" class="wrapper" style="background: #ffffff; font-size: 16px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">
 
     <!--[if true]>
     <table role="presentation" style="width: 600px;" align="center"><tr><td>
@@ -78,7 +98,7 @@
 
         <div style="width: 100%; height: 14px">&nbsp;</div>
         <div class="column" style="text-align: center;">
-          <img height="auto" src="https://via.placeholder.com/400x160?text=Logo" width="200" alt="" style="display: block; margin: 0 auto; width: 200px; height: auto;">
+          <img height="auto" src="https://via.placeholder.com/400x160/60bcde/ffffff/?text=Logo" width="200" alt="" style="display: block; margin: 0 auto; width: 200px; height: auto;">
           <h1 style="margin: 0; font-family: Georgia, Times New Roman, serif; font-size: 18px; line-height: 24px; color: #333333; text-align: center; font-weight: normal;">Tagline/title</h1>
         </div>
 
@@ -89,7 +109,7 @@
             <h2 style="margin: 0; margin-bottom: 10px; font-family: Georgia, Times New Roman, serif; font-size: 28px; line-height: 32px; color: #333333; font-weight: normal;">Headline/primary title text</h2>
           </div>
           <p style="margin: 0; margin-bottom: 10px; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">Text copy goes here. Sometimes it includes email provider tokens to pull in audience info, like %%first_name%%. And some additional text that may also include a <a href="https://blocksedit.com/#" style="text-decoration: underline; color: #1467ac;">link</a>.</p>
-          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: inline-block; margin: 0px auto; border-collapse: separate; border-radius: 50px; line-height: 100%;">
+          <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="btn" style="display: inline-block; margin: 0px auto; border-collapse: separate; border-radius: 50px; line-height: 100%;">
             <tbody style="display: inline-block;">
               <tr>
                 <td style="display: inline-block; border: none; border-radius: 50px; cursor: auto; mso-padding-alt: 12px 25px; background: #333333;"><a href="https://blocksedit.com/#" style="margin: 0; display: inline-block; border-radius: 50px; padding: 12px 25px; background: #333333; color: #ffffff; font-family: Helvetica,Arial,sans-serif; font-size: 18px; font-weight: 400; line-height: 1; text-decoration: none; mso-padding-alt: 0px; text-align: center;" target="_blank">Call to Action</a>
@@ -104,9 +124,9 @@
 <!-- Footer -->
 
       <div style="margin: 30px 20px;">
-        <p style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 18px; color: #333333; text-align:center">
+        <p style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 18px; color: #333333; text-align:center">
           Reason for email being sent.<br>
-          <a href="https://blocksedit.com/#" target="_blank" style="color: #333333; text-decoration: underline;">Unsubscribe</a>
+          <a href="https://blocksedit.com/#" target="_blank" style="color: #1467ac; text-decoration: underline;">Unsubscribe</a>
         </p>
       </div>
 
