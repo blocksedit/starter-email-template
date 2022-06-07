@@ -27,6 +27,8 @@ A modularly designed boilerplate template that acts as a starting point for your
 - Microsoft Outlook
 - Yahoo! Mail and AOL
 
+## Modules included ##
+
 <img src="starter-template-sections-mobile.png" />
 
 ## The frame ##
@@ -315,3 +317,9 @@ Padding adjustments are made as columns are stacked on top of each other. 4-colu
     }
 
 Body changes to essentially black, but for improved accessibility it's better to go a shade lighter. The same goes for making text color off-white.
+
+## References ##
+
+- [Good Email Code](https://www.goodemailcode.com/) - a thorough overview of email code and why it's used
+- [Email Coding Guidelines](https://github.com/hteumeuleu/email-guidelines) - also covers and explains standard email code to use
+- [Cerberus](https://www.cerberusemail.com/) - additional code compatibility options for older email clients
