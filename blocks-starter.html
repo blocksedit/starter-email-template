@@ -139,15 +139,15 @@
 <!-- Content -->
 
 <!-- Code block section -->
-        <code class="block-section be-code-edit" data-title="Code" style="font-size: 16px; line-height: 18px;">/* Code block */ %%[ IF @member=="True" THEN ]%%</code>
+        <code class="block-section be-code-edit" data-group="section-code" data-title="Code" style="font-size: 16px; line-height: 18px;">/* Code block */ %%[ IF @member=="True" THEN ]%%</code>
 
 <!-- Spacer section -->
-        <div class="block-section" data-group="section-spacer" data-title="Spacer" style="width: 100%; height: 14px">&nbsp;</div>
-        <div class="block-section" data-group="section-spacer" style="width: 100%; height: 28px">&nbsp;</div>
+        <div class="block-section" data-group="section-spacer" data-title="Spacer" style="width: 100%;"><p style="float: left; margin: 0; margin-bottom: 14px; width: 100%; line-height: 0;">&nbsp;</p></div>
+        <div class="block-section" data-group="section-spacer" style="width: 100%;"><p style="float: left; margin: 0; margin-bottom: 28px; width: 100%; line-height: 0;">&nbsp;</p></div>
 
 <!-- Featured image section -->
-        <div class="block-section" data-title="Featured image">
-          <img src="https://dummyimage.com/1200x600/60bcde/ffffff&text=Feature+Image" width="600" height="auto" alt="" class="block-edit" style="display: block; width: 100%; height: auto;">
+        <div class="block-section" data-group="featured-image" data-title="Featured image">
+          <img src="https://dummyimage.com/1200x600/60bcde/ffffff&text=Feature+Image" width="600" height="auto" alt="" class="block-edit" data-block="featured-image-image" style="display: block; width: 100%; height: auto;">
         </div>
 
 <!-- Standard content section -->
@@ -157,40 +157,40 @@
 <!-- Standalone Components -->
 
 <!-- Fluid image -->
-          <div class="block-component" data-title="Fluid image">
-            <img src="https://dummyimage.com/1200x600/60bcde/ffffff&text=Content+Image" width="600" height="auto" alt="" class="block-edit" style="display: block; width: 100%; height: auto;">
+          <div class="block-component" data-group="fluid-image" data-title="Fluid image">
+            <img src="https://dummyimage.com/1200x600/60bcde/ffffff&text=Content+Image" width="600" height="auto" alt="" class="block-edit" data-block="fluid-image-image" style="display: block; width: 100%; height: auto;">
           </div>
 
 <!-- Code block -->
-          <code class="block-component be-code-edit" data-title="Code" style="font-size: 16px; line-height: 18px;">/* Code block */ %%[ IF @member=="True" THEN ]%%</code>
+          <code class="block-component be-code-edit" data-group="component-code" data-title="Code" style="font-size: 16px; line-height: 18px;">/* Code block */ %%[ IF @member=="True" THEN ]%%</code>
 
 <!-- Spacer -->
-          <div class="block-component" data-group="component-spacer" data-title="Spacer" style="width: 100%; height: 14px;">&nbsp;</div>
-          <div class="block-component" data-group="component-spacer" style="width: 100%; height: 28px;">&nbsp;</div>
+          <p class="block-component" data-group="component-spacer" data-title="Spacer" style="display: inline-block; margin: 0; margin-bottom: 14px; width: 100%; line-height: 0;">&nbsp;</p>
+          <p class="block-component" data-group="component-spacer" style="display: inline-block; margin: 0; margin-bottom: 28px; width: 100%; line-height: 0;">&nbsp;</p>
 
 <!-- Titles -->
-          <div class="block-component" data-title="Title">
-            <h2 class="block-edit" style="margin: 0; margin-bottom: 10px; font-family: Georgia, Times New Roman, serif; font-size: 28px; line-height: 32px; color: #333333; font-weight: normal;">Headline/primary title text</h2>
+          <div class="block-component" data-group="compontent-title" data-title="Title">
+            <h2 class="block-edit" data-block="component-title-title" style="margin: 0; margin-bottom: 10px; font-family: Georgia, Times New Roman, serif; font-size: 28px; line-height: 32px; color: #333333; font-weight: normal;">Headline/primary title text</h2>
           </div>
-          <div class="block-component" data-title="Subtitle">
-            <h3 class="block-edit" style="margin: 0; margin-bottom: 10px; font-family: Georgia, Times New Roman, serif; font-size: 22px; line-height: 28px; color: #333333; font-weight: normal;">Subheadline/secondary title text</h3>
+          <div class="block-component" data-group="component-subtitle" data-title="Subtitle">
+            <h3 class="block-edit" data-block="compontent-subtitle-subtitle" style="margin: 0; margin-bottom: 10px; font-family: Georgia, Times New Roman, serif; font-size: 22px; line-height: 28px; color: #333333; font-weight: normal;">Subheadline/secondary title text</h3>
           </div>
 
 <!-- Text -->
-          <div class="block-component" data-title="Text">
-            <p class="block-edit" style="margin: 0; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">More text copy goes here. It could be as long as you need it to be as there is plenty of room to let it flow!</p>
+          <div class="block-component" data-group="component-text" data-title="Text">
+            <p class="block-edit" data-block="component-text-text" style="margin: 0; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">More text copy goes here. It could be as long as you need it to be as there is plenty of room to let it flow!</p>
           </div>
-          <div class="block-component" data-title="Unordered List">
+          <div class="block-component" data-group="compontent-list" data-title="Unordered List">
             <ul style="margin: 0; padding-left: 30px;">
-              <li class="block-edit">List item</li>
+              <li class="block-edit" data-block="component-list-item">List item</li>
             </ul>
           </div>
 
 <!-- Button -->
-          <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="btn block-component" data-title="Button" style="display: inline-block; margin: 0 auto; border-collapse: separate; border-radius: 50px; line-height: 100%;">
+          <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="btn block-component" data-group="compontent-button" data-title="Button" style="display: inline-block; margin: 0 auto; border-collapse: separate; border-radius: 50px; line-height: 100%;">
             <tbody style="display: inline-block;">
               <tr>
-                <td style="display: inline-block; border: none; border-radius: 50px; cursor: auto; mso-padding-alt: 12px 25px; background: #333333;"><a href="https://blocksedit.com/#" class="block-edit" style="margin: 0; display: inline-block; border-radius: 50px; padding: 12px 25px; background: #333333; color: #ffffff; font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 1; text-decoration: none; mso-padding-alt: 0px; text-align: center;" target="_blank">Call to Action</a></td>
+                <td style="display: inline-block; border: none; border-radius: 50px; cursor: auto; mso-padding-alt: 12px 25px; background: #333333;"><a href="https://blocksedit.com/#" class="block-edit" data-block="component-button-cta" style="margin: 0; display: inline-block; border-radius: 50px; padding: 12px 25px; background: #333333; color: #ffffff; font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 1; text-decoration: none; mso-padding-alt: 0px; text-align: center;" target="_blank">Call to Action</a></td>
               </tr>
             </tbody>
           </table>
@@ -225,16 +225,12 @@
         </div>
 
 <!-- Featured section with background image -->
-        <div class="block-section" data-title="Featured background image">
-          <div class="block-background" data-block="feature-bg" style="background-image: url(https://dummyimage.com/1200x600/60bcde/ffffff&text=Background+Image); background-repeat: no-repeat; background-size: cover; background-position: top center; width: 100%; height: 300px;">
-            <!--[if mso]> <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" fillcolor="#333333" style="width: 450pt; height: 300px; text-align: center;"> <v:fill type="frame" size="450pt,300pt" aspect="atleast" alignshape="true" src="https://dummyimage.com/1200x600/60bcde/ffffff&text=Background+Image" data-block="feature-bg" color="#ffffff"> <v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text: true;"><![endif]-->
-            <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
-              <tr>
-                <td style="height: 260px; padding: 14px; vertical-align: middle; text-align: center;">
-                  <h2 class="block-edit block-remove" style="margin: 0; font-family: Georgia, Times New Roman, serif; font-size: 28px; line-height: 32px; color: #333333; font-weight: normal;">Headline/primary title text</h2>
-                </td>
-              </tr>
-            </table>
+        <div class="block-section" data-group="feature-bg-image" data-title="Featured background image">
+          <div class="block-background" data-block="feature-bg-image-image" style="background-image: url(https://dummyimage.com/1200x600/60bcde/ffffff&text=Background+Image); background-repeat: no-repeat; background-size: cover; background-position: top center; width: 100%; min-height: 300px; text-align: center;">
+            <!--[if mso]><v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="border: 0; display: inline-block; position: absolute; width: 450pt;"><v:fill type="frame" src="https://dummyimage.com/1200x600/60bcde/ffffff&text=Background+Image" color="#ffffff" aspect="atleast" data-block="feature-bg-image-image" /><v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text: true;" /><![endif]-->
+            <p style="display: inline-block; margin: 0; margin-bottom: 40px; width: 100%; line-height: 0;">&nbsp;</p>
+            <h2 class="block-edit block-remove" data-block="feature-bg-image-title" style="margin: 0; font-family: Georgia, Times New Roman, serif; font-size: 28px; line-height: 32px; color: #333333; font-weight: normal; text-align: center;">Headline/primary title text</h2>
+            <p style="display: inline-block; margin: 0; margin-bottom: 40px; width: 100%; line-height: 0;">&nbsp;</p>
             <!--[if mso]></v:textbox></v:rect><![endif]-->
           </div>
         </div>
@@ -922,10 +918,10 @@
 <!-- Footer -->
 
       <div style="margin: 30px 20px;">
-        <p class="block-edit block-remove" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 20px; color:#333333; text-align: center;">
+        <p class="block-edit block-remove" data-block="footer-nav" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 20px; color:#333333; text-align: center;">
           <a href="https://blocksedit.com/#" target="_blank" style="text-decoration: underline; color: #1467ac;">Nav Link</a> | <a href="https://blocksedit.com/#" target="_blank" style="text-decoration: underline; color: #1467ac;">Nav Link</a> | <a href="https://blocksedit.com/#" style="text-decoration: underline; color: #1467ac;">Nav Link</a>
         </p>
-        <p class="block-edit" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 18px; color: #333333; text-align:center">
+        <p class="block-edit" data-block="footer-reason" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 14px; line-height: 18px; color: #333333; text-align:center">
           Reason for email being sent.<br>Mailing address<br>
           <a href="https://blocksedit.com/#" target="_blank" style="color: #1467ac; text-decoration: underline;">Unsubscribe</a>
         </p>
