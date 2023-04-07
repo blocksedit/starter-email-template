@@ -6,18 +6,21 @@ A modularly designed boilerplate template that acts as a starting point for your
 ## Approach ##
 
 **Optimized for accessibility**
+
 Div's for structure, ghost tables only used when needed to support Outlook, and semantic elements like heading and paragraph tags used throughout.
 
 **Modular design**
+
 Stackable sections and standalone components following modular design practices.
 
 **Responsive adjustments**
+
 Simple CSS media query definitions to adjust layout for mobile across all modules.
 
 **Available in three versions**
-- Standard with full Outlook for Windows backwards compatibility
-- Minus tables, a version with reduced table support for structure
-- Minus Outlook, with no support for the Outlook for Windows Word rendering engine as it gets phased out
+1. Full Outlook for Windows Word rendering engine backwards compatibility
+2. Minus tables, a version with reduced table support for structure
+3. Minus Outlook, with no support for the Outlook for Windows Word rendering engine
 
 ## Features ##
 - Support for major email clients
