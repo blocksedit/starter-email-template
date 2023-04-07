@@ -5,11 +5,19 @@ A modularly designed boilerplate template that acts as a starting point for your
 
 ## Approach ##
 
-**Optimized for accessibility** - div's for structure, ghost tables only used when needed to support Outlook, semantic elements like heading and paragraph tags
+**Optimized for accessibility**
+Div's for structure, ghost tables only used when needed to support Outlook, and semantic elements like heading and paragraph tags used throughout.
 
-**Modular design** - stackable sections and standalone components following modular design method
+**Modular design**
+Stackable sections and standalone components following modular design practices.
 
-**Responsive adjustments** - simple CSS media query definitions to adjust layout for mobile across all modules
+**Responsive adjustments**
+Simple CSS media query definitions to adjust layout for mobile across all modules.
+
+**Available in three versions**
+- Standard with full Outlook for Windows backwards compatibility
+- Minus tables, a version with reduced table support for structure
+- Minus Outlook, with no support for the Outlook for Windows Word rendering engine as it gets phased out
 
 ## Features ##
 - Support for major email clients
@@ -24,7 +32,7 @@ A modularly designed boilerplate template that acts as a starting point for your
 ## Email clients tested ##
 - Gmail and Android
 - Apple Mail
-- Microsoft Outlook
+- Microsoft Outlook versions
 - Yahoo! Mail and AOL
 
 ## Modules included ##
@@ -41,11 +49,13 @@ HTML5 Doctype is enough to trigger standards mode on supported clients.
 
 ### HTML element ###
 
-    <html lang="en" dir="ltr" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+    <html lang="en" dir="ltr">
 
 Set language for email clients, browsers, and screen readers. If you need to set language direction, add `dir="ltr"` for left-to-right, or `dir="rtl"` for right-to-left reading.
 
-Add the XML namespace for Outlook image DPI setting.
+Add the XML namespace for Outlook image DPI setting:
+
+    <html lang="en" dir="ltr" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 
 ### Meta ###
 
@@ -100,6 +110,14 @@ Dark mode setting works the same as the meta definition, currently only supporte
 
 Text snippet shown under the subject line in the listing of emails in email clients.
 
+### Outlook for Windows Word rendering engine note ###
+
+    <!--[if mso]>
+      <p style="text-align: center;">Email may not look quite right in Outlook for Windows. <a href="#" style="text-decoration: underline; color: #1467ac;">View it in your browser.</a></p>
+    <![endif]-->
+
+Use this as an alternative to spending too much uncessary time on Outlook issues!
+
 ### Wrapper ###
 
     <div role="article" lang="en" dir="ltr" class="wrapper" style="background: #ffffff; font-size: 16px;"> </div>
@@ -145,6 +163,20 @@ For styling, set a background color for email clients that may remove it from th
     <![endif]-->
 
 Uses both divs and ghost tables for columns.
+
+### Example section minus tables ###
+
+    <!-- Two-column section with image on the left -->
+    <div style="display: table; width: 100%;">
+      <div class="column" style="display: table-cell; width: 50%; padding-right: 0;">
+        <img height="auto" src="https://dummyimage.com/600x400/60bcde/ffffff&text=Content+Image" width="300" alt="" class="fill" style="display: block; width: 300px; height: auto;">
+      </div>
+      <div class="column" style="display: table-cell; width: 50%; padding-left: 14px; vertical-align: middle;">
+        <p style="margin: 0; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 24px; color: #333333; font-weight: 300;">Text next to an image, in a two-colum section, split 50/50.</p>
+      </div>
+    </div>
+
+Uses only div for columns based on the [no more tables approach](https://blocksedit.com/content-code/no-more-tables-for-email/). For full alternate layout, refer to blocks-starter-minus-tables.html.
 
 ### Background colors ###
 
@@ -202,6 +234,18 @@ An example feature section with a background image:
 
 Uses VML background image for Outlook. [More on background properties in VML →](https://www.hteumeuleu.com/2021/background-properties-in-vml/)
 
+Example version without VML, ignoring Outlook for Windows Word rendering engine:
+
+    <div class="block-section" data-group="feature-bg-image" data-title="Featured background image">
+      <div class="block-background" data-block="feature-bg-image-image" style="background-image: url(https://dummyimage.com/1200x600/60bcde/ffffff&text=Background+Image); background-repeat: no-repeat; background-size: cover; background-position: top center; width: 100%; min-height: 300px; text-align: center;">
+        <p style="display: inline-block; margin: 0; margin-bottom: 40px; width: 100%; line-height: 0;">&nbsp;</p>
+        <h2 class="block-edit block-remove" data-block="feature-bg-image-title" style="margin: 0; font-family: Georgia, Times New Roman, serif; font-size: 28px; line-height: 32px; color: #333333; font-weight: normal; text-align: center;">Headline/primary title text</h2>
+        <p style="display: inline-block; margin: 0; margin-bottom: 40px; width: 100%; line-height: 0;">&nbsp;</p>
+      </div>
+    </div>
+
+For full alternate layout, refer to blocks-starter-minus-outlook.html in the repo.
+
 ## Standalone components ##
 
 ### Fluid images ###
@@ -243,7 +287,7 @@ Paragraph and unordered lists.
       </tbody>
     </table>
 
-Uses table code for compatibility. `border-radius` does not work in Outlook.
+Uses table code for backwards compatibility. `border-radius` does not work in Outlook.
 
 ### Links ###
 
