@@ -3,8 +3,6 @@
 
 A modularly designed boilerplate template that acts as a starting point for your own email templates, with focus on semantics and accessibility, and clean code that works across email clients. It includes essential email layouts and components, with minimal styling for you to build on top of.
 
-## Approach ##
-
 **Optimized for accessibility**
 
 Div's for structure, ghost tables only used when needed to support Outlook, and semantic elements like heading and paragraph tags used throughout.
@@ -28,8 +26,6 @@ Simple CSS media query definitions to adjust layout for mobile across all module
 - Mobile-responsive ready
 - Dark mode compatibility
 - Essential pre-built modules
-- Includes example email types
-- Includes example themed email
 - Blocks Edit ready
 
 ## Email clients tested ##
