@@ -15,10 +15,11 @@ Stackable sections and standalone components following modular design practices.
 
 Simple CSS media query definitions to adjust layout for mobile across all modules.
 
-**Available in three versions**
+**Available in four versions**
 1. Full Outlook for Windows Word rendering engine backwards compatibility
-2. Minus tables, a version with reduced table support for structure
-3. Minus Outlook, with no support for the Outlook for Windows Word rendering engine
+2. Minus tables - a version with reduced table support for structure
+3. Minus Outlook - no support for the Outlook for Windows Word rendering engine
+4. Modern - no tables, no Outlook, and no inline styling requirement
 
 ## Features ##
 - Support for major email clients
