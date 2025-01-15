@@ -15,11 +15,9 @@ Stackable sections and standalone components following modular design practices.
 
 Simple CSS media query definitions to adjust layout for mobile across all modules.
 
-**Available in four versions**
-1. Full Outlook for Windows Word rendering engine backwards compatibility
-2. Minus tables - a version with reduced table support for structure
-3. Minus Outlook - no support for the Outlook for Windows Word rendering engine
-4. Modern - no tables, no Outlook, and no inline styling requirement
+**Available in modern and legacy versions**
+
+Modern does not use tables or inline styling. Legacy includes backwards compatibility for Outlook for Windows Word rendering engine and uses ghost tables and inline styles.
 
 ## Features ##
 - Support for major email clients
@@ -53,6 +51,8 @@ HTML5 Doctype is enough to trigger standards mode on supported clients.
 
 Set language for email clients, browsers, and screen readers. If you need to set language direction, add `dir="ltr"` for left-to-right, or `dir="rtl"` for right-to-left reading.
 
+#### Legacy support images DPI ####
+
 Add the XML namespace for Outlook image DPI setting:
 
     <html lang="en" dir="ltr" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
@@ -70,7 +70,7 @@ Set the character encoding standard.
 
 `color-scheme` tells email clients preferred dark mode settings, for the ones that follow it. `light dark` means you support both. `light only` means you only support light styling. [More on dark mode support →](https://blocksedit.com/content-code/dark-mode-decision/)
 
-### Outlook DPI setting ###
+#### Legacy support Outlook DPI setting ####
 
     <!--[if mso]>
     <noscript>
@@ -102,7 +102,152 @@ Helps with rendering images on higher DPI screens, specificially background imag
       box-sizing: border-box;
     }
 
-Dark mode setting works the same as the meta definition, currently only supported by Apple Mail.
+Dark mode setting works the same as the meta definition but is currently only supported by Apple Mail.
+
+Content styling that replaces legacy inline code:
+
+    /* Content */
+    body {
+      background: #ffffff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      line-height: 24px;
+      color: #333333;
+      font-weight: 300;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+    img.fill {
+      width: 100%;
+      height: auto;
+    }
+
+    .preview {
+      display: none;
+    }
+
+    .wrapper {
+      background: #ffffff;
+    }
+    .main {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .content {
+      margin: 0;
+      text-align: left;
+    }
+
+    .row {
+      display: table;
+      width: 100%;
+    }
+    .row-alt {
+      background-color: #eeeeee;
+    }
+    .col {
+      display: table-cell;
+      vertical-align: top;
+    }
+    .row-alt .col {
+      padding: 14px;
+    }
+    .col-3 {
+      width: 25%;
+    }
+    .col-4 {
+      width: 33.3%;
+    }
+    .col-6 {
+      width: 50%;
+    }
+    .col-8 {
+      width: 66.6%;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      font-family: Georgia, Times New Roman, serif;
+      color: #333333;
+      font-weight: normal;
+    }
+    h1 {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    h2 {
+      margin-bottom: 10px;
+      font-size: 28px;
+      line-height: 32px;
+    }
+    h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+      line-height: 28px;
+    }
+    p {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+    a {
+      text-decoration: underline;
+      color: #1467ac;
+    }
+    ul {
+      margin: 0;
+      padding-left: 30px;
+    }
+
+    .btn {
+      margin: 0;
+      display: inline-block;
+      border-radius: 50px;
+      padding: 12px 25px;
+      background: #333333;
+      color: #ffffff !important;
+      font-weight: 400;
+      line-height: 1;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .spacer-sm, .spacer-md {
+      display: inline-block;
+      margin: 0;
+      margin-bottom: 14px;
+      width: 100%;
+      line-height: 0;
+    }
+    .spacer-md {
+      margin-bottom: 28px;
+    }
+
+    .bg-image {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top center;
+      width: 100%;
+      min-height: 300px;
+      text-align: center;
+    }
+    .bg-image h2 {
+      padding-top: 40px;
+    }
+
+    .footer {
+      margin: 30px 20px;
+    }
+    .footer p {
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+    }
 
 ### Preview text ###
 
@@ -112,11 +257,11 @@ Text snippet shown under the subject line in the listing of emails in email clie
 
 ### Outlook for Windows Word rendering engine note ###
 
-    <!--[if mso]>
-      <p style="text-align: center;">Email may not look quite right in Outlook for Windows. <a href="#" style="text-decoration: underline; color: #1467ac;">View it in your browser.</a></p>
-    <![endif]-->
+For anyone that may still be on a legacy version of Outlook.
 
-Use this as an alternative to spending too much uncessary time on Outlook issues!
+    <!--[if mso]>
+      <p style="text-align: center;">Email may not look quite right in your version of Outlook. <a href="#" style="text-decoration: underline; color: #1467ac;">View it in your browser.</a></p>
+    <![endif]-->
 
 ### Wrapper ###
 
@@ -129,6 +274,18 @@ For styling, set a background color for email clients that may remove it from th
 ## Layout sections ##
 
 ### Example section ###
+
+    <!-- Two-column section with image on the left -->
+    <div style="display: table; width: 100%;">
+      <div class="column" style="display: table-cell; width: 50%; padding-right: 0;">
+        <img height="auto" src="https://dummyimage.com/600x400/60bcde/ffffff&text=Content+Image" width="300" alt="" class="fill" style="display: block; width: 300px; height: auto;">
+      </div>
+      <div class="column" style="display: table-cell; width: 50%; padding-left: 14px; vertical-align: middle;">
+        <p style="margin: 0; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 24px; color: #333333; font-weight: 300;">Text next to an image, in a two-colum section, split 50/50.</p>
+      </div>
+    </div>
+
+#### Legacy support example section ####
 
     <!-- Two-column section with image on the left -->
     <!--[if true]>
@@ -164,61 +321,19 @@ For styling, set a background color for email clients that may remove it from th
 
 Uses both divs and ghost tables for columns.
 
-### Example section minus tables ###
-
-    <!-- Two-column section with image on the left -->
-    <div style="display: table; width: 100%;">
-      <div class="column" style="display: table-cell; width: 50%; padding-right: 0;">
-        <img height="auto" src="https://dummyimage.com/600x400/60bcde/ffffff&text=Content+Image" width="300" alt="" class="fill" style="display: block; width: 300px; height: auto;">
-      </div>
-      <div class="column" style="display: table-cell; width: 50%; padding-left: 14px; vertical-align: middle;">
-        <p style="margin: 0; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 24px; color: #333333; font-weight: 300;">Text next to an image, in a two-colum section, split 50/50.</p>
-      </div>
-    </div>
-
-Uses only div for columns based on the [no more tables approach](https://blocksedit.com/content-code/no-more-tables-for-email/). For full alternate layout, refer to blocks-starter-minus-tables.html.
-
-### Background colors ###
-
-Same section as above, but with an added background color:
-
-    <!-- Two-column section with image on the left and background color -->
-    <!--[if true]>
-    <table border="0" bgcolor="#eeeeee" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="all: unset; opacity: 0;">
-      <tr>
-    <![endif]-->
-    <div style="display: table; width: 100%; background-color: #eeeeee;">
-      <!--[if true]><td width="50%" style="padding: 14px; padding-right: 0;"><![endif]-->
-      <!--[if !true]><!-->
-        <div class="column" style="display: table-cell; width: 50%; padding: 14px; padding-right: 0;">
-      <!--<![endif]-->
-          <img height="auto" src="https://via.placeholder.com/600x400/60bcde/ffffff/?text=Content+Image" width="286" alt="" class="fill" style="display: block; width: 286px; height: auto;">
-      <!--[if !true]><!-->
-        </div>
-      <!--<![endif]-->
-      <!--[if true]>
-        </td>
-        <td width="50%" style="padding: 14px;">
-      <![endif]-->
-      <!--[if !true]><!-->
-        <div class="column" style="display: table-cell; width: 50%; padding: 14px; vertical-align: middle;">
-      <!--<![endif]-->
-          <p style="margin: 0; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 24px; color: #333333; font-weight: 300;">Text next to an image, in a two-colum section, split 50/50.</p>
-      <!--[if !true]><!-->
-        </div>
-      <!--<![endif]-->
-      <!--[if true]></td><![endif]-->
-    </div>
-    <!--[if true]>
-      </tr>
-    </table>
-    <![endif]-->
-
-Besides adding background color values, it also includes added padding where needed, and adjusts the width of the image.
-
 ### Background images ###
 
 An example feature section with a background image:
+
+    <div class="block-section" data-group="feature-bg-image" data-title="Featured background image">
+      <div class="block-background" data-block="feature-bg-image-image" style="background-image: url(https://dummyimage.com/1200x600/60bcde/ffffff&text=Background+Image); background-repeat: no-repeat; background-size: cover; background-position: top center; width: 100%; min-height: 300px; text-align: center;">
+        <p style="display: inline-block; margin: 0; margin-bottom: 40px; width: 100%; line-height: 0;">&nbsp;</p>
+        <h2 class="block-edit block-remove" data-block="feature-bg-image-title" style="margin: 0; font-family: Georgia, Times New Roman, serif; font-size: 28px; line-height: 32px; color: #333333; font-weight: normal; text-align: center;">Headline/primary title text</h2>
+        <p style="display: inline-block; margin: 0; margin-bottom: 40px; width: 100%; line-height: 0;">&nbsp;</p>
+      </div>
+    </div>
+
+#### Legacy support background images ####
 
     <div style="background-image: url(https://via.placeholder.com/1200x600/60bcde/ffffff/?text=Background+Image); background-repeat: no-repeat; background-size: cover; background-position: top center; width: 100%; height: 300px;">
       <!--[if mso]> <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" fillcolor="#333333" style="width: 450pt; height: 300px; text-align: center;"> <v:fill type="frame" size="450pt,300pt" aspect="atleast" alignshape="true" src="https://via.placeholder.com/1200x600/60bcde/ffffff/?text=Background+Image" data-block="feature-bg" color="#ffffff"> <v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text: true;"><![endif]-->
@@ -233,18 +348,6 @@ An example feature section with a background image:
     </div>
 
 Uses VML background image for Outlook. [More on background properties in VML →](https://www.hteumeuleu.com/2021/background-properties-in-vml/)
-
-Example version without VML, ignoring Outlook for Windows Word rendering engine:
-
-    <div class="block-section" data-group="feature-bg-image" data-title="Featured background image">
-      <div class="block-background" data-block="feature-bg-image-image" style="background-image: url(https://dummyimage.com/1200x600/60bcde/ffffff&text=Background+Image); background-repeat: no-repeat; background-size: cover; background-position: top center; width: 100%; min-height: 300px; text-align: center;">
-        <p style="display: inline-block; margin: 0; margin-bottom: 40px; width: 100%; line-height: 0;">&nbsp;</p>
-        <h2 class="block-edit block-remove" data-block="feature-bg-image-title" style="margin: 0; font-family: Georgia, Times New Roman, serif; font-size: 28px; line-height: 32px; color: #333333; font-weight: normal; text-align: center;">Headline/primary title text</h2>
-        <p style="display: inline-block; margin: 0; margin-bottom: 40px; width: 100%; line-height: 0;">&nbsp;</p>
-      </div>
-    </div>
-
-For full alternate layout, refer to blocks-starter-minus-outlook.html in the repo.
 
 ## Standalone components ##
 
@@ -277,7 +380,15 @@ Headlines and subheadlines, using semantic title tags.
 
 Paragraph and unordered lists.
 
+### Links ###
+
+    <a href="https://blocksedit.com/#" style="text-decoration: underline; color: #1467ac;">link</a>
+
 ### Buttons ###
+
+    <a href="https://blocksedit.com/#" style="margin: 0; display: inline-block; border-radius: 50px; padding: 12px 25px; background: #333333; color: #ffffff; font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 1; text-decoration: none; text-align: center;">link</a>
+
+#### Legacy support buttons ####
 
     <table border="0" cellpadding="0" cellspacing="0" role="presentation" class="btn" style="display: inline-block; margin: 0 auto; border-collapse: separate; border-radius: 50px; line-height: 100%;">
       <tbody style="display: inline-block;">
@@ -288,10 +399,6 @@ Paragraph and unordered lists.
     </table>
 
 Uses table code for backwards compatibility. `border-radius` does not work in Outlook.
-
-### Links ###
-
-    <a href="https://blocksedit.com/#" style="text-decoration: underline; color: #1467ac;">link</a>
 
 ## Responsive adjustments ##
 
