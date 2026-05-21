@@ -33,11 +33,11 @@ Modern does not use tables or inline styling. Legacy includes backwards compatib
 - Microsoft Outlook versions
 - Yahoo! Mail and AOL
 
-## Modules included ##
+## Preview ##
 
-<img src="starter-template-sections-mobile.png" />
+<img src="starter-template-sections.jpg">
 
-## The frame ##
+## Notes ##
 
 ### Doctype ###
 
@@ -145,15 +145,9 @@ Content styling that replaces legacy inline code:
       display: table;
       width: 100%;
     }
-    .row-alt {
-      background-color: #eeeeee;
-    }
     .col {
       display: table-cell;
       vertical-align: top;
-    }
-    .row-alt .col {
-      padding: 14px;
     }
     .col-3 {
       width: 25%;
@@ -278,7 +272,7 @@ For styling, set a background color for email clients that may remove it from th
     <!-- Two-column section with image on the left -->
     <div style="display: table; width: 100%;">
       <div class="column" style="display: table-cell; width: 50%; padding-right: 0;">
-        <img height="auto" src="https://dummyimage.com/600x400/60bcde/ffffff&text=Content+Image" width="300" alt="" class="fill" style="display: block; width: 300px; height: auto;">
+        <img height="auto" src="image.png" width="300" alt="" class="fill" style="display: block; width: 300px; height: auto;">
       </div>
       <div class="column" style="display: table-cell; width: 50%; padding-left: 14px; vertical-align: middle;">
         <p style="margin: 0; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 18px; line-height: 24px; color: #333333; font-weight: 300;">Text next to an image, in a two-colum section, split 50/50.</p>
@@ -297,7 +291,7 @@ For styling, set a background color for email clients that may remove it from th
       <!--[if !true]><!-->
         <div class="column" style="display: table-cell; width: 50%; padding-right: 0;">
       <!--<![endif]-->
-          <img height="auto" src="https://via.placeholder.com/600x400/60bcde/ffffff/?text=Content+Image" width="300" alt="" class="fill" style="display: block; width: 300px; height: auto;">
+          <img height="auto" src="image.png" width="300" alt="" class="fill" style="display: block; width: 300px; height: auto;">
       <!--[if !true]><!-->
         </div>
       <!--<![endif]-->
@@ -326,7 +320,7 @@ Uses both divs and ghost tables for columns.
 An example feature section with a background image:
 
     <div class="block-section" data-group="feature-bg-image" data-title="Featured background image">
-      <div class="block-background" data-block="feature-bg-image-image" style="background-image: url(https://dummyimage.com/1200x600/60bcde/ffffff&text=Background+Image); background-repeat: no-repeat; background-size: cover; background-position: top center; width: 100%; min-height: 300px; text-align: center;">
+      <div class="block-background" data-block="feature-bg-image-image" style="background-image: url(background-image.png); background-repeat: no-repeat; background-size: cover; background-position: top center; width: 100%; min-height: 300px; text-align: center;">
         <p style="display: inline-block; margin: 0; margin-bottom: 40px; width: 100%; line-height: 0;">&nbsp;</p>
         <h2 class="block-edit block-remove" data-block="feature-bg-image-title" style="margin: 0; font-family: Georgia, Times New Roman, serif; font-size: 28px; line-height: 32px; color: #333333; font-weight: normal; text-align: center;">Headline/primary title text</h2>
         <p style="display: inline-block; margin: 0; margin-bottom: 40px; width: 100%; line-height: 0;">&nbsp;</p>
@@ -335,8 +329,8 @@ An example feature section with a background image:
 
 #### Legacy support background images ####
 
-    <div style="background-image: url(https://via.placeholder.com/1200x600/60bcde/ffffff/?text=Background+Image); background-repeat: no-repeat; background-size: cover; background-position: top center; width: 100%; height: 300px;">
-      <!--[if mso]> <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" fillcolor="#333333" style="width: 450pt; height: 300px; text-align: center;"> <v:fill type="frame" size="450pt,300pt" aspect="atleast" alignshape="true" src="https://via.placeholder.com/1200x600/60bcde/ffffff/?text=Background+Image" data-block="feature-bg" color="#ffffff"> <v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text: true;"><![endif]-->
+    <div style="background-image: url(background-image.png); background-repeat: no-repeat; background-size: cover; background-position: top center; width: 100%; height: 300px;">
+      <!--[if mso]> <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" fillcolor="#333333" style="width: 450pt; height: 300px; text-align: center;"> <v:fill type="frame" size="450pt,300pt" aspect="atleast" alignshape="true" src="background-image.png" data-block="feature-bg" color="#ffffff"> <v:textbox inset="0,0,0,0" style="mso-fit-shape-to-text: true;"><![endif]-->
       <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
         <tr>
           <td style="height: 260px; padding: 14px; vertical-align: middle; text-align: center;">
@@ -351,9 +345,9 @@ Uses VML background image for Outlook. [More on background properties in VML →
 
 ## Standalone components ##
 
-### Fluid images ###
+### Feature images ###
 
-    <img src="https://via.placeholder.com/1200x600/60bcde/ffffff/?text=Content+Image" width="600" height="auto" alt="" style="display: block; width: 100%; height: auto;">
+    <img src="feature-image.png" width="600" height="auto" alt="" style="display: block; width: 100%; height: auto;">
 
 Adjusts to column width.
 
@@ -421,13 +415,6 @@ Uses table code for backwards compatibility. `border-radius` does not work in Ou
     .column:last-child {
       padding-bottom: 0 !important;
     }
-    .column.alt {
-      padding-top: 14px !important;
-      padding-bottom: 0 !important;
-    }
-    .column.alt:last-child {
-      padding-bottom: 14px !important;
-    }
     .column img.fill {
       width: 100% !important;
       height: auto !important;
@@ -438,9 +425,6 @@ Uses table code for backwards compatibility. `border-radius` does not work in Ou
     }
     .icons .column:nth-child(3) {
       padding-bottom: 0 !important;
-    }
-    .icons .column.alt:nth-child(3) {
-      padding-bottom: 14px !important;
     }
 
 Padding adjustments are made as columns are stacked on top of each other. 4-column icon sections are stacked as 2 by 2 columns. Images are scaled to fit the space.
@@ -459,9 +443,6 @@ Padding adjustments are made as columns are stacked on top of each other. 4-colu
     h1, h2, h3, p, ul li, code {
       color: #f1f1f1 !important;
     }
-    .column.alt {
-      background-color: #1b1b1b !important;
-    }
     .btn a {
       background: #a6a6a6 !important;
       color: #404040 !important;
@@ -474,3 +455,5 @@ Body changes to essentially black, but for improved accessibility it's better to
 - [Good Email Code](https://www.goodemailcode.com/) - a thorough overview of email code and why it's used
 - [Email Coding Guidelines](https://github.com/hteumeuleu/email-guidelines) - also covers and explains standard email code to use
 - [Cerberus](https://www.cerberusemail.com/) - additional code compatibility options for older email clients
+
+*This template has been put together by the Blocks Edit team. [Blocks Edit](https://blocksedit.com) makes any HTML template editable in a visual editor. So you can setup your own design for your team to build and edit landing emails on their own.*
